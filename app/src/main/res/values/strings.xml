@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Doge Coin App</string>
+    <string name="textview">textview</string>
+    <string name="play_again">play_again</string>
+    <string name="support"><u>Support</u></string>
+    <string name="abt"><u>About Dogecoin</u></string>
+</resources>
