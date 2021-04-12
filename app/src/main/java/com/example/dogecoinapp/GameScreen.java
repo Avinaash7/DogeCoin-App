@@ -167,7 +167,7 @@ public class GameScreen extends AppCompatActivity {
 
                         dogecoin_counter=dogecoin_counter+1;
                         scoreupdate.setText("Score: "+Integer.toString(dogecoin_counter));
-                        Toast.makeText(GameScreen.this, "You clicked on DogeCoin", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(GameScreen.this, "You clicked on DogeCoin", Toast.LENGTH_LONG).show();
                         img.setImageBitmap(null);
                         GenerateNewimg();
 
@@ -180,10 +180,10 @@ public class GameScreen extends AppCompatActivity {
                                     wrongclick = MediaPlayer.create(GameScreen.this, R.raw.button_soundwrong);
                                 } wrongclick.start();
 
-                                Toast.makeText(GameScreen.this, "You Lose", Toast.LENGTH_SHORT).show();
-                                Log.i("hoo","superrr");
-                                Log.i("tag of clicked view",String.valueOf(v.getTag()));
-                                Log.i("Tag of img",String.valueOf(img.getTag()));
+                               // Toast.makeText(GameScreen.this, "You Lose", Toast.LENGTH_SHORT).show();
+//                                Log.i("hoo","superrr");
+//                                Log.i("tag of clicked view",String.valueOf(v.getTag()));
+//                                Log.i("Tag of img",String.valueOf(img.getTag()));
 
                                 cancel();
                                 loseMessage();
@@ -215,7 +215,7 @@ public class GameScreen extends AppCompatActivity {
 
                 public void onFinish() {
                     //happens after countdown is finished
-                    Log.i("Done", "Countdown Timer finished");
+                    //Log.i("Done", "Countdown Timer finished");
                     if(imageId!=1){
                         GenerateNewimg();
                     }
